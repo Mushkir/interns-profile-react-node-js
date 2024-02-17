@@ -1,9 +1,15 @@
+import { Link } from "react-router-dom";
+
 const TheNavBar = () => {
   return (
     <div className="font-Sen bg-gray-800 px-20 py-10 text-white flex justify-between items-center">
       <h3 className="text-4xl font-semibold">InternsHub</h3>
 
-      <div className="bg-gray-200 px-5  py-2 rounded-md text-gray-800 hover:font-semibold hover:bg-gray-300 hover:transition 500 flex  items-center gap-1">
+      <Link
+        to="https://github.com/Mushkir/interns-profile-react-node-js"
+        target="_blank"
+        className="bg-gray-200 px-5  py-2 rounded-md text-gray-800 hover:font-semibold hover:bg-gray-300 hover:transition 500 flex  items-center gap-1"
+      >
         <div className="">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -18,7 +24,7 @@ const TheNavBar = () => {
           </svg>
         </div>
         GitHub
-      </div>
+      </Link>
     </div>
   );
 };
